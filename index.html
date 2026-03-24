@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" >
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>JA2K Construction</title>
-  <link rel="stylesheet" href="css/style.css" >
-  <link rel="stylesheet" href="css/home.css" >
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/home.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <header class="site-header">
@@ -23,26 +28,41 @@
   </header>
 
   <main>
-    <section class="hero">
-      <div class="hero-overlay"></div>
+    <section class="hero reveal">
 
-      <div class="hero-content container">
-        <p class="hero-tag">Trusted Construction & Renovation Services</p>
-        <h1>Building quality spaces for homes and businesses</h1>
-        <p class="hero-text">
-          JA2K delivers reliable construction, renovation, plumbing, sewage,
-          and aluminium installation services with a focus on quality,
-          professionalism, and customer satisfaction.
-        </p>
+  <div class="hero-content container">
+    <p class="hero-tag">Trusted Construction & Renovation Services</p>
+    <h1>Building quality spaces for homes and businesses</h1>
+    <p class="hero-text">
+      JA2K delivers reliable construction, renovation, plumbing, sewage,
+      and aluminium installation services with a focus on quality,
+      professionalism, and customer satisfaction.
+    </p>
 
-        <div class="hero-buttons">
-          <a href="contact.html" class="btn">Request a Quote</a>
-          <a href="services.html" class="btn btn-outline">Explore Services</a>
-        </div>
-      </div>
-    </section>
+    <div class="hero-buttons">
+      <a href="contact.html" class="btn">Request a Quote</a>
+      <a href="services.html" class="btn btn-outline">Explore Services</a>
+    </div>
+  </div>
 
-    <section class="intro section">
+  <div class="hero-illustration" aria-hidden="true">
+    <svg viewBox="0 0 320 260" class="worker-svg">
+      <rect x="180" y="30" width="90" height="170" rx="4" class="wall" />
+      <line x1="175" y1="40" x2="175" y2="190" class="measure-line" />
+      <rect x="166" y="70" width="18" height="10" rx="3" class="tape-head" />
+      <circle cx="95" cy="72" r="18" class="worker-head" />
+      <rect x="80" y="92" width="30" height="55" rx="10" class="worker-body" />
+      <line x1="82" y1="108" x2="58" y2="135" class="worker-limb" />
+      <line x1="108" y1="108" x2="155" y2="95" class="worker-limb arm-reach" />
+      <line x1="90" y1="147" x2="78" y2="192" class="worker-limb" />
+      <line x1="100" y1="147" x2="112" y2="192" class="worker-limb" />
+      <circle cx="155" cy="95" r="5" class="worker-hand" />
+    </svg>
+  </div>
+
+</section>
+
+    <section class="intro section reveal">
       <div class="container intro-grid">
         <div class="intro-text">
           <p class="section-label">Who We Are</p>
@@ -55,26 +75,29 @@
 
         <div class="stats-grid">
           <div class="stat-card">
-            <h3>Quality</h3>
-            <p>Strong workmanship and attention to detail on every project.</p>
+            <h3><span class="counter" data-target="25">0</span>+</h3>
+            <p>Projects completed with care and quality.</p>
           </div>
+
           <div class="stat-card">
-            <h3>Reliable</h3>
-            <p>Clear communication, timely updates, and dependable service.</p>
+            <h3><span class="counter" data-target="5">0</span></h3>
+            <p>Core services offered to clients.</p>
           </div>
+
           <div class="stat-card">
-            <h3>Practical</h3>
-            <p>Solutions tailored to your budget, needs, and timeline.</p>
+            <h3><span class="counter" data-target="10">0</span>+</h3>
+            <p>Years of combined practical experience.</p>
           </div>
+
           <div class="stat-card">
-            <h3>Professional</h3>
-            <p>A clean, modern, and client-focused approach from start to finish.</p>
+            <h3><span class="counter" data-target="100">0</span>%</h3>
+            <p>Commitment to professional service and client satisfaction.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="services section">
+    <section class="services section reveal">
       <div class="container">
         <p class="section-label">Our Services</p>
         <h2 class="section-title">What we do</h2>
@@ -113,19 +136,19 @@
       </div>
     </section>
 
-    <section class="projects-preview section">
+    <section class="projects-preview section reveal">
       <div class="container">
         <div class="section-heading">
           <div>
             <p class="section-label">Recent Work</p>
-            <h2 class="section-title">Project highlights</h2>
+            <h2 class="section-title">Project Highlights</h2>
           </div>
           <a href="projects.html" class="text-link">View all projects</a>
         </div>
 
         <div class="project-grid">
           <div class="project-card">
-            <div class="project-image placeholder">Project Image</div>
+            <div class="project-image">Project Image</div>
             <div class="project-info">
               <h3>Home Renovation</h3>
               <p>Interior and exterior improvements with a modern finish.</p>
@@ -133,7 +156,7 @@
           </div>
 
           <div class="project-card">
-            <div class="project-image placeholder">Project Image</div>
+            <div class="project-image">Project Image</div>
             <div class="project-info">
               <h3>Plumbing Upgrade</h3>
               <p>Functional and efficient plumbing upgrades for better performance.</p>
@@ -141,7 +164,7 @@
           </div>
 
           <div class="project-card">
-            <div class="project-image placeholder">Project Image</div>
+            <div class="project-image">Project Image</div>
             <div class="project-info">
               <h3>Aluminium Installation</h3>
               <p>Durable and stylish aluminium work for a clean professional result.</p>
@@ -151,14 +174,12 @@
       </div>
     </section>
 
-    <section class="cta-banner">
+    <section class="cta-banner reveal">
       <div class="container cta-banner-content">
         <div>
           <p class="section-label light">Let’s Build Together</p>
           <h2>Have a project in mind?</h2>
-          <p>
-            Contact us today to discuss your construction or renovation needs.
-          </p>
+          <p>Contact us today to discuss your construction or renovation needs.</p>
         </div>
 
         <a href="contact.html" class="btn">Get Started</a>
