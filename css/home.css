@@ -2,12 +2,17 @@
   min-height: 90vh;
   display: flex;
   align-items: center;
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(135deg, #727D73, #AAB99A);
 }
 
+/* TEXT */
 .hero-content {
+  position: relative;
+  z-index: 2;
   color: var(--white);
-  max-width: 700px;
+  max-width: 600px;
   padding: 60px 0;
 }
 
@@ -38,6 +43,19 @@
   flex-wrap: wrap;
 }
 
+/* 👇 HERO ILLUSTRATION FIX */
+.hero-illustration {
+  position: absolute;
+  right: -2%;
+  bottom: 8%;
+  width: 340px;
+  max-width: 32vw;
+  opacity: 0.9;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* INTRO */
 .intro-grid {
   display: grid;
   grid-template-columns: 1.1fr 1fr;
@@ -65,16 +83,19 @@
 }
 
 .stat-card h3 {
+  font-size: 2rem;
   color: var(--dark);
   margin-bottom: 8px;
 }
 
+/* SERVICES */
 .service-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
+/* PROJECTS */
 .section-heading {
   display: flex;
   justify-content: space-between;
@@ -120,6 +141,7 @@
   color: var(--dark);
 }
 
+/* CTA */
 .cta-banner {
   background-color: var(--dark);
   color: var(--white);
@@ -138,13 +160,99 @@
   margin-bottom: 10px;
 }
 
+/* REVEAL ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* SVG STYLING */
+.wall {
+  fill: rgba(255, 255, 255, 0.18);
+  stroke: rgba(255, 255, 255, 0.35);
+  stroke-width: 2;
+}
+
+.measure-line {
+  stroke: #ffffff;
+  stroke-width: 3;
+  stroke-dasharray: 6 6;
+}
+
+.worker-head {
+  fill: #f3d2b6;
+}
+
+.worker-body {
+  fill: #ffffff;
+}
+
+.worker-limb {
+  stroke: #ffffff;
+  stroke-width: 6;
+  stroke-linecap: round;
+}
+
+.worker-hand {
+  fill: #f3d2b6;
+}
+
+/* ANIMATION */
+.tape-head {
+  fill: #D9CFC7;
+  animation: tapeMove 2.2s ease-in-out infinite;
+}
+
+.arm-reach {
+  animation: armMove 2.2s ease-in-out infinite;
+  transform-origin: 108px 108px;
+}
+
+.worker-hand {
+  animation: handMove 2.2s ease-in-out infinite;
+}
+
+@keyframes tapeMove {
+  0%, 100% {
+    transform: translateY(-25px);
+  }
+  50% {
+    transform: translateY(55px);
+  }
+}
+
+@keyframes armMove {
+  0%, 100% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes handMove {
+  0%, 100% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+/* RESPONSIVE */
 @media (max-width: 900px) {
   .intro-grid,
   .service-grid,
   .project-grid,
   .cta-banner-content {
-    grid-template-columns: 1fr;
     display: grid;
+    grid-template-columns: 1fr;
   }
 
   .stats-grid {
@@ -154,6 +262,13 @@
   .section-heading {
     flex-direction: column;
     align-items: start;
+  }
+
+  .hero-illustration {
+    width: 220px;
+    right: -5%;
+    bottom: 6%;
+    opacity: 0.5;
   }
 }
 
@@ -176,5 +291,9 @@
 
   .hero h1 {
     font-size: 2.3rem;
+  }
+
+  .hero-illustration {
+    display: none;
   }
 }
