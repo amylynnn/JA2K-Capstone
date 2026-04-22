@@ -1,68 +1,122 @@
 /* HERO SECTION */
 .services-hero {
-  height: 60vh;
-  background: url('../images/services-bg.jpg') no-repeat center/cover;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    height: 60vh;
+    background: url('../images/services-bg.jpg') no-repeat center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* DARK OVERLAY */
+/* OVERLAY */
 .overlay {
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(4px); /* ← THIS is the blur */
-  -webkit-backdrop-filter: blur(4px); /* for Safari */
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
 /* HERO TEXT */
 .overlay h1 {
-  font-size: 3rem;
-  margin-bottom: 10px;
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 .overlay p {
-  font-size: 1.2rem;
+    font-size: 1.2rem;
 }
 
-/* SERVICES GRID */
-.services-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 40px;
+/* OUR FOCUS */
+.focus-section {
+    text-align: center;
+    padding: 60px 20px 30px;
+    background-color: #d8cfc8;
 }
 
-/* SERVICE CARDS */
-.service-card {
-  background-color: #f5f5f5;
-  padding: 25px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.focus-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+    color: #2b2b2b;
 }
 
-.service-card h3 {
-  margin-bottom: 10px;
-  font-size: 1.3rem;
+.focus-text {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #4a4a4a;
 }
 
-.service-card p {
-  line-height: 1.6;
-  color: #555;
+/* SERVICES CIRCLES */
+.services-circles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px 30px;
+    padding: 40px 80px 70px;
+    background-color: #d8cfc8;
+    text-align: center;
 }
 
-/* HOVER EFFECT */
-.service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .services-circles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    .services-circles {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* SERVICE ITEMS */
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 220px;
+    margin: 0 auto;
+}
+
+/* CIRCLE ICON */
+.service-circle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-circle:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* TEXT */
+.service-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.service-item p {
+    max-width: 220px;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
 }
