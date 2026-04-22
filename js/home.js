@@ -33,7 +33,7 @@ if (revealElements.length > 0) {
   });
 }
 
-// COUNTER ANIMATION
+
 const counters = document.querySelectorAll(".counter");
 
 const animateCounter = (counter) => {
