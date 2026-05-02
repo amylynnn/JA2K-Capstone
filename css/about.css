@@ -1,0 +1,153 @@
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #727D73;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  color: #ffffff;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.btn-primary {
+  background-color: #C9B59C;
+  padding: 10px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: #AAB99A;
+}
+
+/* HERO */
+.about-hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(to right, #727D73, #AAB99A);
+  color: white;
+}
+
+.about-hero h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.about-hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+/* ABOUT SECTION */
+.about-container {
+  background-color: #D9CFC7;
+  padding: 70px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD */
+.about-card {
+  max-width: 800px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  line-height: 1.9;
+  font-size: 17px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.about-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* HEADINGS */
+.about-card h3 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  color: #727D73;
+  font-size: 22px;
+  font-weight: 600;
+  border-left: 4px solid #C9B59C;
+  padding-left: 10px;
+}
+
+/* SLOGAN */
+.slogan {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(to right, #727D73, #AAB99A);
+  color: white;
+}
+
+.slogan h2 {
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #727D73;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-hero h1 {
+    font-size: 36px;
+  }
+
+  .about-card {
+    padding: 25px;
+  }
+}

@@ -1,0 +1,140 @@
+
+/* FORCE COLOR PALETTE OVERRIDE */
+
+/* NAVBAR */
+.navbar {
+  background-color: #727D73 !important;
+}
+
+.nav-links a {
+  color: #f5f5f5 !important;
+}
+
+.nav-links a.active {
+  color: #ffffff !important;
+}
+
+/* BUTTON */
+.btn-primary {
+  background-color: #C9B59C !important;
+  color: #333 !important;
+}
+
+.btn-primary:hover {
+  background-color: #AAB99A !important;
+}
+
+/* HERO */
+.about-hero {
+  background: linear-gradient(to right, #727D73, #AAB99A) !important;
+}
+/* CONTAINER */
+.review-container {
+  display: flex;
+  gap: 40px;
+  padding: 60px;
+  background-color: #D9CFC7;
+}
+
+/* SECTIONS */
+.reviews-list,
+.review-form {
+  flex: 1;
+}
+
+/* TITLES */
+.reviews-list h2,
+.review-form h2 {
+  color: #727D73;
+  margin-bottom: 20px;
+}
+
+/* EMPTY STATE */
+.empty-message {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  color: #666;
+  margin-bottom: 20px;
+  border: 1px solid #C9B59C;
+}
+
+/* REVIEW CARD */
+.review-card {
+  background: white;
+  padding: 18px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border-left: 4px solid #AAB99A;
+  transition: all 0.3s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.review-card h4 {
+  margin-bottom: 6px;
+  color: #727D73;
+}
+
+.review-card p {
+  color: #444;
+}
+
+/* FORM */
+.review-form form {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #C9B59C;
+}
+
+/* INPUTS */
+.review-form input,
+.review-form select,
+.review-form textarea {
+  margin-bottom: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #C9B59C;
+  outline: none;
+}
+
+.review-form input:focus,
+.review-form textarea:focus,
+.review-form select:focus {
+  border-color: #727D73;
+  background-color: #f9f7f5;
+}
+
+/* BUTTON */
+.review-form button {
+  background-color: #727D73;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.review-form button:hover {
+  background-color: #AAB99A;
+  color: #333;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .review-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+}
+body {
+  background-color: #D9CFC7;
+}
