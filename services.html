@@ -25,7 +25,7 @@
   <!-- HERO SECTION -->
   <header class="services-hero">
     <div class="overlay">
-      <h1>Our Services</h1>
+      <h1 id="decrypt-text">Our Services</h1>
       <p>Quality renovation and decorative solutions for your home.</p>
     </div>
   </header>
@@ -33,7 +33,7 @@
   <main>
 
     <!-- OUR FOCUS -->
-    <section class="focus-section">
+    <section class="focus-section" id="focus-section">
       <h2>Our Focus</h2>
       <p class="focus-text">
         We renovate and improve homes by combining quality workmanship,
@@ -42,60 +42,217 @@
       </p>
     </section>
 
-    <!-- SERVICES CIRCLES -->
-    <section class="services-circles">
+    <!-- SERVICES -->
+    <section class="services-cards">
 
-      <article class="service-item">
-        <div class="service-circle">🖼️</div>
+      <article class="service-card">
+        <div class="service-icon">
+          <img src="images/decorative-panels.png" alt="Decorative Panels icon">
+        </div>
         <h3>Decorative Panels</h3>
-        <p>Imported panels that enhance your home interior.</p>
+        <p>High-quality decorative panels imported from India, designed to enhance interiors with modern and elegant finishes.</p>
       </article>
 
-      <article class="service-item">
-        <div class="service-circle">🛠️</div>
+      <article class="service-card">
+        <div class="service-icon">
+          <img src="images/panel-installation.png" alt="Panel Installation icon">
+        </div>
         <h3>Panel Installation</h3>
-        <p>Professional installation for secure and neat finishes.</p>
+        <p>Expert installation ensuring precision, durability, and a seamless finish for all decorative panel applications.</p>
       </article>
 
-      <article class="service-item">
-        <div class="service-circle">🔌</div>
+      <article class="service-card">
+        <div class="service-icon">
+          <img src="images/electrical-work.png" alt="Electrical Work icon">
+        </div>
         <h3>Electrical Work</h3>
-        <p>Reliable electrical installation and maintenance services.</p>
+        <p>Safe and reliable electrical installations, repairs, and maintenance tailored for modern residential needs.</p>
       </article>
 
-      <article class="service-item">
-        <div class="service-circle">🎨</div>
+      <article class="service-card">
+        <div class="service-icon">
+          <img src="images/painting.png" alt="Painting icon">
+        </div>
         <h3>Painting</h3>
-        <p>Interior and exterior painting for a fresh modern look.</p>
+        <p>Professional interior and exterior painting services delivering smooth finishes and long-lasting visual appeal.</p>
       </article>
 
-      <article class="service-item">
-        <div class="service-circle">🚿</div>
+      <article class="service-card">
+        <div class="service-icon">
+          <img src="images/plumbing.png" alt="Plumbing icon">
+        </div>
         <h3>Plumbing</h3>
-        <p>Efficient plumbing solutions for renovation projects.</p>
+        <p>Efficient plumbing solutions including installation, repairs, and maintenance for all renovation projects.</p>
       </article>
 
-      <article class="service-item">
-        <div class="service-circle">🪟</div>
+      <article class="service-card">
+        <div class="service-icon">
+          <img src="images/aluminium-works.png" alt="Aluminium Works icon">
+        </div>
         <h3>Aluminium Works</h3>
-        <p>Durable aluminium fittings for modern homes.</p>
+        <p>Custom aluminium fittings and structures designed for durability, functionality, and contemporary design.</p>
       </article>
 
-      <article class="service-item">
-        <div class="service-circle">📐</div>
+      <article class="service-card">
+        <div class="service-icon">
+          <img src="images/architectural-services.png" alt="Architectural Services icon">
+        </div>
         <h3>Architectural Services</h3>
-        <p>Design and planning support for your projects.</p>
+        <p>Comprehensive design and planning support to bring your ideas to life with practical and aesthetic solutions.</p>
       </article>
 
-      <article class="service-item">
-        <div class="service-circle">🚧</div>
+      <article class="service-card">
+        <div class="service-icon">
+          <img src="images/sewage-services.png" alt="Sewage Services icon">
+        </div>
         <h3>Sewage Services</h3>
-        <p>Complete sewage solutions for residential properties.</p>
+        <p>Complete sewage system solutions ensuring proper drainage, hygiene, and long-term reliability for properties.</p>
       </article>
 
     </section>
 
+    <!-- ✅ MOVED CONTACT BUTTON HERE -->
+    <div class="services-contact">
+      <a href="contact.html" class="main-contact-btn">CONTACT US</a>
+    </div>
+
+    <!-- COMPLETED PROJECTS -->
+    <section class="projects-showcase">
+      <h2>Completed Projects</h2>
+      <p class="projects-text">
+        Explore some of our completed work, showcasing the quality, detail, and workmanship delivered by JA2K.
+      </p>
+
+      <div class="projects-gallery">
+        <div class="gallery-item big">
+          <img src="images/living-room.jpeg">
+        </div>
+        <div class="gallery-item tall">
+          <img src="images/living-room-2.jpeg">
+        </div>
+        <div class="gallery-item">
+          <img src="images/living-room-3.jpeg">
+        </div>
+        <div class="gallery-item wide">
+          <img src="images/kitchen-2.jpeg">
+        </div>
+        <div class="gallery-item">
+          <img src="images/bedroom.jpeg">
+        </div>
+        <div class="gallery-item tall">
+          <img src="images/kitchen.jpeg">
+        </div>
+        <div class="gallery-item wide">
+          <img src="images/aluminium-windows.jpeg">
+        </div>
+        <div class="gallery-item">
+          <img src="images/kitchen-3.jpeg">
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="why-section">
+      <div class="why-container">
+
+        <div class="why-text">
+          <h2>Why Choose Us?</h2>
+          <p>
+            JA2K is committed to delivering high-quality renovation and decorative solutions,
+            combining craftsmanship, modern design, and attention to detail to transform your living spaces.
+          </p>
+          <p>
+            We focus on reliability, efficiency, and customer satisfaction, ensuring every project is completed
+            to the highest standards while meeting your expectations.
+          </p>
+        </div>
+
+        <div class="why-icons">
+          <div class="why-item">
+            <div class="why-icon">
+              <img src="images/experience.png">
+            </div>
+            <p>2+ Years Experience</p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <img src="images/quality-service.png">
+            </div>
+            <p>Quality Service</p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <img src="images/quick-turnaround.png">
+            </div>
+            <p>Quick Turnaround</p>
+          </div>
+
+          <div class="why-item">
+            <div class="why-icon">
+              <img src="images/support.png">
+            </div>
+            <p>Dedicated Support</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
   </main>
+
+  <!-- SCRIPT -->
+  <script>
+    const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const element = document.getElementById("decrypt-text");
+    const originalText = "Our Services";
+
+    let iteration = 0;
+
+    const interval = setInterval(() => {
+      element.innerText = element.innerText
+        .split("")
+        .map((letter, index) => {
+          if (index < iteration) {
+            return originalText[index];
+          }
+          return letters[Math.floor(Math.random() * 26)];
+        })
+        .join("");
+
+      if (iteration >= originalText.length) {
+        clearInterval(interval);
+      }
+
+      iteration += 1 / 2;
+    }, 40);
+
+    const focusSection = document.getElementById("focus-section");
+
+    focusSection.addEventListener("mousemove", (e) => {
+      const items = focusSection.querySelectorAll("h2, p");
+
+      const rect = focusSection.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left;
+      const sectionWidth = rect.width;
+
+      const ratio = (mouseX / sectionWidth - 0.5) * 2;
+
+      items.forEach((item, index) => {
+        const amount = index === 0 ? 20 : 35;
+        item.style.transform = `translateX(${ratio * amount}px)`;
+      });
+    });
+
+    focusSection.addEventListener("mouseleave", () => {
+      const items = focusSection.querySelectorAll("h2, p");
+
+      items.forEach((item) => {
+        item.style.transform = "translateX(0)";
+      });
+    });
+  </script>
 
 </body>
 </html>
