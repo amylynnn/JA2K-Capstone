@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,35 +56,39 @@
       <div id="reviewList"></div>
     </div>
 
-    <!-- RIGHT SIDE -->
-    <div class="review-form">
-      <h2>Add a Review</h2>
+    <!-- RIGHT: FORM -->
+<div class="review-form">
+  <h2>Add a Review</h2>
 
-      <form id="reviewForm">
+  <form id="reviewForm">
 
-        <label for="name">Name</label>
-        <input type="text" id="name" required>
+    <label>Name</label>
+    <input type="text" id="name" required>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" required>
+    <label>Email</label>
+    <input type="email" id="email" required>
 
-        <label for="rating">Rating</label>
-        <select id="rating" required>
-          <option value="">Select Rating</option>
-          <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
-          <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
-          <option value="⭐⭐⭐">⭐⭐⭐</option>
-          <option value="⭐⭐">⭐⭐</option>
-          <option value="⭐">⭐</option>
-        </select>
+    <label>Rating</label>
+    <select id="rating" required>
+      <option value="">Select Rating</option>
+      <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
+      <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
+      <option value="⭐⭐⭐">⭐⭐⭐</option>
+      <option value="⭐⭐">⭐⭐</option>
+      <option value="⭐">⭐</option>
+    </select>
 
-        <label for="reviewText">Review</label>
-        <textarea id="reviewText" rows="4" required></textarea>
+    <label>Review</label>
+    <textarea id="reviewText" rows="4" required></textarea>
 
-        <button type="submit">Submit Review</button>
+    <!-- IMAGE UPLOAD -->
+    <label>Upload Renovation Photo</label>
+    <input type="file" id="reviewImage" accept="image/*">
 
-      </form>
-    </div>
+    <button type="submit">Submit Review</button>
+
+  </form>
+</div>
 
   </section>
 
