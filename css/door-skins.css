@@ -1,0 +1,213 @@
+.catalogue-hero {
+  min-height: 70vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
+    url("../images/catalogue/door-skins/door-skin-1.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding: 120px 8%;
+  color: #fff;
+}
+
+.catalogue-hero-content {
+  max-width: 700px;
+}
+
+.catalogue-hero h1 {
+  font-size: 3.5rem;
+  margin: 10px 0 20px;
+}
+
+.catalogue-hero p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.catalogue-card {
+  position: relative;
+
+  background: #f5f1ed;
+
+  border-radius: 35px;
+
+  padding: 35px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 15px 40px rgba(0,0,0,0.08);
+
+  transition: 0.4s ease;
+}
+
+.catalogue-card img {
+  width: 100%;
+  display: block;
+  border-radius: 18px;
+
+  transition: 0.4s ease;
+}
+
+/* OVERLAY */
+
+.catalogue-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: rgba(0,0,0,0.35);
+
+  backdrop-filter: blur(6px);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0;
+
+  transition: 0.4s ease;
+
+  z-index: 5;
+}
+
+.catalogue-card:hover .catalogue-overlay {
+  opacity: 1;
+}
+
+.catalogue-card:hover img {
+  transform: scale(1.03);
+}
+
+.overlay-btn {
+  background: #AAB99A;
+
+  color: white;
+
+  padding: 14px 28px;
+
+  border-radius: 50px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.overlay-btn:hover {
+  background: #727D73;
+}
+
+.section-label {
+  color: #AAB99A;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.hero-buttons,
+.contact-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.catalogue-section {
+  padding: 90px 5%;
+  background: #D9CFC7;
+}
+
+.catalogue-section .section-heading {
+  margin-bottom: 60px;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 45px;
+}
+
+.section-heading h2 {
+  font-size: 2.5rem;
+  color: #727D73;
+}
+
+.catalogue-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding-top: 30px;
+}
+
+.catalogue-grid img {
+  width: 100%;
+
+  /* IMPORTANT */
+  height: auto;
+
+  /* REMOVE object-fit cover */
+  object-fit: contain;
+
+  border-radius: 28px;
+  background: #f5f1ed;
+
+  padding: 18px;
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.08);
+
+  transition: 0.4s ease;
+}
+
+.catalogue-grid img:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+.catalogue-contact {
+  background: #C9B59C;
+  padding: 70px 8%;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.catalogue-contact h2 {
+  font-size: 2.3rem;
+  color: #727D73;
+}
+
+.catalogue-contact p {
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+.secondary-btn {
+  background: transparent;
+  border: 2px solid #727D73;
+  color: #727D73;
+}
+
+.secondary-btn:hover {
+  background: #727D73;
+  color: #fff;
+}
+
+@media (max-width: 992px) {
+
+  .catalogue-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .catalogue-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
