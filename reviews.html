@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,90 +11,143 @@
 
 <body>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="logo">JA2K</div>
+<header class="site-header">
+  <nav class="luxury-navbar">
 
-    <ul class="nav-links">
+    <a href="index.html" class="luxury-logo">
+      <img src="images/logo.png" alt="JA2K Logo">
+    </a>
+
+    <ul class="luxury-nav-links">
       <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="projects.html">Projects</a></li>
+
       <li><a href="about.html">About</a></li>
-      <li><a href="reviews.html" class="active">Reviews</a></li>
+
+      <li><a href="services.html">Services</a></li>
+
+      <li><a href="services.html#projects">Projects</a></li>
+
+      <li><a href="index.html#panels">Panels</a></li>
+
+      <li><a href="contact.html">Contact</a></li>
     </ul>
 
-    <a href="#" class="btn-primary">Request Quote</a>
-  </header>
+    <a href="contact.html" class="luxury-quote-btn">
+      Get Quote
+    </a>
 
-  <!-- HERO -->
-  <section class="about-hero">
-    <h1>Customer Reviews</h1>
-    <p>Share your experience with JA2K</p>
-  </section>
+  </nav>
+</header>
 
-  <!-- MAIN -->
-  <section class="review-container">
+  <main>
 
-    <!-- LEFT SIDE -->
-    <div class="reviews-list">
-      <h2>Customer Feedback</h2>
+    <section class="reviews-hero">
+      <div class="reviews-hero-overlay">
+        <p class="section-label">Client Feedback</p>
+        <h1>Customer Reviews</h1>
+        <p>
+          Read what clients say about JA2K’s construction, renovation,
+          decorative panel, and installation services.
+        </p>
+      </div>
+    </section>
 
-      <!-- EMPTY MESSAGE -->
-      <div id="emptyMessage" class="empty-message">
-        No reviews yet. Be the first to leave one!
+    <section class="reviews-section">
+
+      <div class="reviews-intro">
+        <p class="section-label">Testimonials</p>
+        <h2>Share Your Experience with JA2K</h2>
+        <p>
+          Your feedback helps JA2K improve its services and gives future clients
+          confidence when choosing our team.
+        </p>
       </div>
 
-      <!-- SAMPLE REVIEW (for visual balance) -->
-      <div class="review-card">
-        <h4>Sample Client ⭐⭐⭐⭐⭐</h4>
-        <p>Professional service and excellent workmanship.</p>
+      <div class="review-container">
+
+        <div class="reviews-list">
+          <h2>Customer Feedback</h2>
+
+          <div id="emptyMessage" class="empty-message">
+            No reviews yet. Be the first to leave one!
+          </div>
+
+          <div class="review-card featured-review">
+            <div class="review-top">
+              <h4>Sample Client</h4>
+              <span>⭐⭐⭐⭐⭐</span>
+            </div>
+
+            <p>
+              Professional service, clear communication, and excellent workmanship.
+              The final result was clean, modern, and reliable.
+            </p>
+          </div>
+
+          <div id="reviewList"></div>
+        </div>
+
+        <div class="review-form-card">
+          <h2>Add a Review</h2>
+
+          <p>
+            Leave your rating and feedback about your experience with JA2K.
+          </p>
+
+          <form id="reviewForm">
+
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Your full name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="your@email.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="rating">Rating</label>
+              <select id="rating" required>
+                <option value="">Select Rating</option>
+                <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐ Excellent</option>
+                <option value="⭐⭐⭐⭐">⭐⭐⭐⭐ Very Good</option>
+                <option value="⭐⭐⭐">⭐⭐⭐ Good</option>
+                <option value="⭐⭐">⭐⭐ Fair</option>
+                <option value="⭐">⭐ Poor</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="reviewText">Review</label>
+              <textarea id="reviewText" rows="5" placeholder="Write your review here..." required></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="reviewImage">Upload Project Photo</label>
+              <input type="file" id="reviewImage" accept="image/*">
+            </div>
+
+            <button type="submit" class="btn submit-review-btn">
+              Submit Review
+            </button>
+
+          </form>
+        </div>
+
       </div>
 
-      <!-- DYNAMIC REVIEWS -->
-      <div id="reviewList"></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© 2026 JA2K Construction Services. All rights reserved.</p>
     </div>
-
-    <!-- RIGHT: FORM -->
-<div class="review-form">
-  <h2>Add a Review</h2>
-
-  <form id="reviewForm">
-
-    <label>Name</label>
-    <input type="text" id="name" required>
-
-    <label>Email</label>
-    <input type="email" id="email" required>
-
-    <label>Rating</label>
-    <select id="rating" required>
-      <option value="">Select Rating</option>
-      <option value="⭐⭐⭐⭐⭐">⭐⭐⭐⭐⭐</option>
-      <option value="⭐⭐⭐⭐">⭐⭐⭐⭐</option>
-      <option value="⭐⭐⭐">⭐⭐⭐</option>
-      <option value="⭐⭐">⭐⭐</option>
-      <option value="⭐">⭐</option>
-    </select>
-
-    <label>Review</label>
-    <textarea id="reviewText" rows="4" required></textarea>
-
-    <!-- IMAGE UPLOAD -->
-    <label>Upload Renovation Photo</label>
-    <input type="file" id="reviewImage" accept="image/*">
-
-    <button type="submit">Submit Review</button>
-
-  </form>
-</div>
-
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2026 JA2K Construction Services. All rights reserved.</p>
   </footer>
 
   <script src="js/reviews.js"></script>
+
 </body>
 </html>
